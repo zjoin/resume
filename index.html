@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Резюме - Дмитрий Валуев</title>
+  <style>
+      body, html {
+          margin: 0;
+          padding: 0;
+          font-family: sans-serif;
+      }
+      main {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px;
+      }
+      video {
+          width: 100%;
+          height: 360px;
+      }
+      .avatar-container {
+          margin-top: 16px;
+          text-align: center;
+      }
+      .avatar {
+          width: 200px;
+          border-radius: 50%;
+      }
+      .activity, .name {
+          margin: 8px 0 0 0;
+      }
+      .list-contacts {
+          display: flex;
+          justify-content: center;
+          list-style-type: none;
+      }
+      .list-contacts li {
+          margin: 0 8px;
+      }
+      .container-descr {
+          padding-right: 50px;
+          line-height: 1.5;
+      }
+      footer {
+          padding: 50px;
+          text-align: center;
+          background: aliceblue;
+      }
+      @media screen and (max-width: 1400px) {
+          main {
+              grid-template-columns: 1fr;
+          }
+          .container-descr {
+              max-width: 600px;
+              margin: auto;
+          }
+      }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="grid-item">
+      <section>
+        <video width="640" height="360" autoplay loop muted>
+          <source src="road.mp4" type="video/mp4">
+        </video>
+      </section>
+      <section class="avatar-container">
+        <img class="avatar" src="avatar.jpg" />
+        <div>
+          <h3 class="name">Дмитрий Валуев</h3>
+          <h5 class="activity">Frontend Developer</h5>
+        </div>
+        <div>
+          <ul class="list-contacts">
+            <li>
+              <a href="mailto:document.letter@gmail.com">document.letter@gmail.com</a>
+            </li>
+            <li>
+              <a href="https://t.me/dima_valuev">telegram: @dima_valuev</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/%D0%B4%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9-%D0%B2%D0%B0%D0%BB%D1%83%D0%B5%D0%B2-08315864/">linkedin.com</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="grid-item">
+      <div class="container-descr">
+        <div class="experience">
+          <h2 class="section-header">Август 2017 — по настоящее время</h2>
+          <p class="date">6 лет 10 месяцев</p>
+          <p class="company">АвтоТрансИнфо, ООО (<a href="www.ati.su" target="_blank">www.ati.su</a>)</p>
+          <p>Информационные технологии, системная интеграция, интернет...</p>
+          <p class="description">Frontend-разработчик</p>
+          <ul class="description">
+            <li>Разработка высококачественной библиотеки компонентов для обеспечения совершенства пользовательского опыта.</li>
+            <li>Создание биллинг-системы для оптимизации процессов взаимодействия с клиентами.</li>
+            <li>Участие в разработке различных внутренних продуктов, включая поиск транспорта, расчет расстояний и проверку перевозчика.</li>
+            <li>Активное участие в стартапах внутри компании, способствующих её инновационному развитию.</li>
+          </ul>
+          <div class="skills">
+            <h3 class="skills-header">Технические навыки:</h3>
+            <div>
+              <h4>На фронтенде:</h4>
+              <ul class="skill-list">
+                <li class="skill-item">Глубокие знания JavaScript, HTML/CSS, обеспечивающие превосходное качество кода.</li>
+                <li class="skill-item">Опыт работы со стеком React более 5 лет, с использованием Mobx, Typescript, Webpack и Vite для проектирования архитектуры.</li>
+                <li class="skill-item">Практический опыт внедрения CI/CD и контейнеризации с Docker.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>На бекенде:</h4>
+              <ul class="skill-list">
+                <li class="skill-item">Знание Python и опыт работы с Django для разработки надежных серверных приложений.</li>
+                <li class="skill-item">Опыт работы с REST API для эффективного взаимодействия между фронтендом и бекендом.</li>
+                <li class="skill-item">Знание SQL, PostgreSQL для работы с базами данных.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience">
+          <h2 class="section-header">Декабрь 2016 — июнь 2017</h2>
+          <p class="date">7 месяцев</p>
+          <p class="company">ОТГ, Санкт-Петербург (<a href="https://new.sushiwok.ru" target="_blank">new.sushiwok.ru</a>)</p>
+          <p>Frontend-разработчик</p>
+          <ul class="description">
+            <li>Перевод проекта sushiwok на React js, верстка, анимация, работа с GSAP анимациями.</li>
+          </ul>
+        </div>
+
+        <div class="experience">
+          <h2 class="section-header">Март 2016 — декабрь 2016</h2>
+          <p class="date">10 месяцев</p>
+          <p class="company">Artw, Санкт-Петербург</p>
+          <p>Frontend-разработчик</p>
+          <ul class="description">
+            <li>Адаптивная верстка с нуля, верстка кейсов, промо и лэндингов, поддержка старых проектов, проработка анимаций</li>
+            <li>Используемый стек: Tars boilerplate, ES5 + ES6 + Jquery, Postcss, Flexbox, Sass, Handlebars, webpack + babel, gulp, TweenMax.js, ScrollMagic.js, Affinity Designer</li>
+          </ul>
+        </div>
+
+        <div class="experience">
+          <h2 class="section-header">Июль 2015 — март 2016</h2>
+          <p class="date">9 месяцев</p>
+          <p class="company">Akme.info, Санкт-Петербург (<a href="http://akme.info" target="_blank">akme.info</a>)</p>
+          <p>Frontend-разработчик</p>
+          <ul class="description">
+            <li>Разработка SPA в стартапе социальной сети для потребителей, бизнеса и юристов.</li>
+            <li>Используемый стек: React.js, ES6, webpack + babel, postcss, Flexbox, stylus</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p><p id="currentDateTime"></p></p>
+  </footer>
+  <script>
+	  function getCurrentDateTime() {
+		  const currentDate = new Date();
+
+		  const day = String(currentDate.getDate()).padStart(2, '0');
+		  const month = String(currentDate.getMonth() + 1).padStart(2, '0');
+		  const year = currentDate.getFullYear();
+
+		  const hours = String(currentDate.getHours()).padStart(2, '0');
+		  const minutes = String(currentDate.getMinutes()).padStart(2, '0');
+		  const seconds = String(currentDate.getSeconds()).padStart(2, '0');
+
+		  const formattedDateTime = `${day}.${month}.${year} ${hours}:${minutes}:${seconds}`;
+
+		  return formattedDateTime;
+	  }
+
+	  function updateDateTime() {
+		  document.getElementById("currentDateTime").textContent = getCurrentDateTime();
+	  }
+
+	  // Обновляем время каждую секунду
+	  setInterval(updateDateTime, 1000);
+
+	  // Первоначальное обновление времени
+	  updateDateTime();
+  </script>
+</body>
+</html>
